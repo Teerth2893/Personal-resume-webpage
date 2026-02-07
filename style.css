@@ -121,3 +121,112 @@ a:focus {
 ul {
     list-style-position: inside;
 }
+/* ===================================
+   HEADER SECTION
+   =================================== */
+
+.main-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--bg-primary);
+    padding: var(--spacing-xl) 0;
+    box-shadow: var(--shadow-md);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.header-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+    color: var(--bg-primary);
+    letter-spacing: -0.5px;
+}
+
+.job-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--primary-light);
+    margin-bottom: 0;
+}
+
+/* ===================================
+   NAVIGATION
+   =================================== */
+
+.main-nav {
+    flex: 1;
+    min-width: 250px;
+}
+
+.nav-list {
+    display: flex;
+    gap: var(--spacing-md);
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list a {
+    color: var(--bg-primary);
+    font-weight: 500;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    display: block;
+}
+
+.nav-list a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* ===================================
+   CONTACT LINKS IN HEADER
+   =================================== */
+
+.contact-links {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-md);
+    background-color: var(--bg-primary);
+    color: var(--primary-color);
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+.contact-btn:hover {
+    background-color: var(--primary-light);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    color: var(--primary-dark);
+}
+
+.contact-btn .icon {
+    font-size: 1.2rem;
+}
